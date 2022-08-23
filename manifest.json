@@ -1,0 +1,27 @@
+{
+  "name": "Intercept Requests",
+  "version": "0.1.0",
+  "description": "Proof of concept to intercept all web requests on any web page",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Click to view logs",
+    "default_icon": {
+      "16": "/images/icon-16x16.png",
+      "32": "/images/icon-32x32.png",
+      "48": "/images/icon-48x48.png",
+      "128": "/images/icon-128x128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/icon-16x16.png",
+    "32": "/images/icon-32x32.png",
+    "48": "/images/icon-48x48.png",
+    "128": "/images/icon-128x128.png"
+  },
+  "permissions": ["webRequest"],
+  "host_permissions": ["<all_urls>", "https://*/*", "http://*/*"]
+}
